@@ -35,18 +35,19 @@ def frame_description(base64_image, user_prompt):
     ]
 
 
-def analyze_image(base64_image, user_prompt):
+def analyze_image(full_analysis, base64_image, user_prompt):
     response = client.chat.completions.create(
         model="gpt-4-vision-preview",
         messages=[
                      {
                          "role": "system",
                          "content": """
-                Response should be a sentence max, maybe 2. You are a friend of someone who is watching a basketball game. The clippers are the black jersey team (with white logo on bottom). The other team is the rockets and they are in a white jersey (red logo on bottom). 
+                Response should be a sentence max, maybe 2. You are a friend of someone who is watching a basketball game.
                 They are asking you questions about what is happening in the basketball game. Talk to them naturally like a friendly conversation. Be very passionate and excited about the game and use exclamation marks. 
                 """,
                      },
                  ]
+                 + full_analysis
                  + frame_description(base64_image, user_prompt),
         max_tokens=500,
     )
@@ -75,7 +76,7 @@ def get_prompt():
     return transcript
 
 
-def get_input_file(threshold=0.01, silence_duration=1, base64_image=None):
+def get_input_file(threshold=0.03, silence_duration=3, base64_image=None):
     recognizer = sr.Recognizer()
     with sr.Microphone() as mic:
         print("Listening for speech...")
@@ -118,20 +119,23 @@ def get_input_file(threshold=0.01, silence_duration=1, base64_image=None):
                     audio = recognizer.record(source)
                     with open("audio/input.mp3", "wb") as mp3_file:
                         mp3_file.write(audio.get_wav_data(convert_rate=16000, convert_width=2))
-            print("Audio saved as input.mp3")
+            #print("Audio saved as input.mp3")
         else:
             print("No speech detected")
         return base64_image
 
 
 def main():
+    full_analysis = []
     while True:
         final_image = get_input_file()
         user_prompt = get_prompt()
         print(user_prompt)
-        analysis = analyze_image(final_image, user_prompt)
+        analysis = analyze_image(full_analysis, final_image, user_prompt)
         print(analysis)
         play_audio(analysis)
+        full_analysis = full_analysis + [{"role": "assistant", "content": analysis}]
+
 
 
 if __name__ == "__main__":
