@@ -1,12 +1,10 @@
-
-
 # Conversational AI with GPT-4 Vision, OpenAI Whisper, and TTS
-
-## Demo Video: 
-https://twitter.com/ayushspai/status/1726222559480557647
 
 ## Overview
 This project integrates GPT-4 Vision, OpenAI Whisper, and OpenAI Text-to-Speech (TTS) to create an interactive AI system for conversations. It combines visual and audio inputs for a seamless user experience.
+
+## Demo Video: 
+https://twitter.com/ayushspai/status/1726222559480557647
 
 ## Components
 - **GPT-4 Vision**: Analyzes visual input and generates contextual responses.
