@@ -1,7 +1,9 @@
-Demo:
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Have a live conversation about a basketball game with GPT4V, Whisper, and TTS!<a href="https://twitter.com/hashtag/OpenAI?src=hash&amp;ref_src=twsrc%5Etfw">#OpenAI</a> <a href="https://twitter.com/hashtag/GPT4?src=hash&amp;ref_src=twsrc%5Etfw">#GPT4</a> <a href="https://twitter.com/hashtag/GPT4Vision?src=hash&amp;ref_src=twsrc%5Etfw">#GPT4Vision</a> <a href="https://twitter.com/hashtag/Basketball?src=hash&amp;ref_src=twsrc%5Etfw">#Basketball</a> <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a> <a href="https://t.co/zLDHhMK8l2">pic.twitter.com/zLDHhMK8l2</a></p>&mdash; Ayush Pai (@ayushspai) <a href="https://twitter.com/ayushspai/status/1726222559480557647?ref_src=twsrc%5Etfw">November 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 # Conversational AI with GPT-4 Vision, OpenAI Whisper, and TTS
+
+## Demo Video: 
+https://twitter.com/ayushspai/status/1726222559480557647
 
 ## Overview
 This project integrates GPT-4 Vision, OpenAI Whisper, and OpenAI Text-to-Speech (TTS) to create an interactive AI system for conversations. It combines visual and audio inputs for a seamless user experience.
