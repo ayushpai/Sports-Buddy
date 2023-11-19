@@ -21,7 +21,7 @@ This project integrates GPT-4 Vision, OpenAI Whisper, and OpenAI Text-to-Speech 
 ### Libraries
 Install the necessary libraries with pip:
 ```
-pip install sounddevice soundfile numpy speech_recognition playsound Pillow opencv-python-headless
+pip install sounddevice soundfile numpy speech_recognition playsound Pillow opencv-python openai
 ```
 
 ## Usage
