@@ -1,4 +1,4 @@
-# Conversational AI with GPT-4 Vision, OpenAI Whisper, and TTS
+# Conversational AI with GPT-4 Vision, OpenAI Whisper, TTS, and SingleStore
 
 ## Overview
 This project integrates GPT-4 Vision, OpenAI Whisper, and OpenAI Text-to-Speech (TTS) to create an interactive AI system for conversations. It combines visual and audio inputs for a seamless user experience.
