@@ -9,7 +9,7 @@ import base64
 from playsound import playsound
 from io import BytesIO
 
-
+# You can store user queries with SingleStore. If you do not want to use SingleStore, just use main.py.
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -130,7 +130,8 @@ def get_input_file(threshold=0.03, silence_duration=3, base64_image=None):
 
 def main():
     full_analysis = []
-    conn = s2.connect('user:password@host:port/database')
+    conn = s2.connect(
+        'admin:Testing123@svc-ca8fa339-0d39-4942-ad73-4463f4110a1c-dml.aws-virginia-5.svc.singlestore.com:3306/testing')
 
     conn.autocommit(True)
     try:
