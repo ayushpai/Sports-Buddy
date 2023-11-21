@@ -14,9 +14,11 @@ openai==1.3.3
 opencv-python==4.8.1.78
 Pillow==10.1.0
 playsound==1.3.0
+PyAudio==0.2.14
 pycparser==2.21
 pydantic==2.5.1
 pydantic_core==2.14.3
+pyobjc==10.0
 requests==2.31.0
 sniffio==1.3.0
 sounddevice==0.4.6
