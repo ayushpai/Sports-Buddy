@@ -21,9 +21,9 @@ https://twitter.com/ayushspai/status/1726222559480557647
 - An OpenAI API key (set as an environment variable `OPENAI_API_KEY`)
 
 ### Libraries
-Install the necessary libraries with pip:
+Install the necessary libraries with the requirements.txt file.
 ```
-pip install sounddevice soundfile numpy speech_recognition playsound Pillow opencv-python openai
+pip install -r requirements.txt
 ```
 
 ## Usage
